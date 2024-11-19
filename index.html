@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kartu Tanda Siswa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->    
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->    
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+    <script>
+        function checkStudent() {
+            const studentId = document.getElementById('studentId').value;
+            // Menambahkan folder "Data Siswa" ke dalam URL
+            if (studentId === '12345678901' || studentId === '20120124001' || studentId === '20130224002' || studentId === '20090124003' || studentId === '20150124004' || studentId === '20090224005' || studentId === '20120124006' || studentId === '20160124007' || studentId === '20140124008' || studentId === '20130524009' || studentId === '20120724010' || studentId === '20100724011' || studentId === '20150724012' || studentId === '20120724013' || studentId === '19990724014' || studentId === '19940724015' || studentId === '20070724016') {
+                window.location.href = `Data Siswa/${studentId}.html`; // Mengarahkan ke folder Data Siswa
+            } else {
+                alert('Nomor siswa tidak ditemukan!');
+            }
+        }
+    </script>
+    <style>
+        .login100-form-btn {
+            background-color: green; /* Warna hijau */
+            transition: background-color 0.3s;
+        }
+        .login100-form-btn:hover,
+        .login100-form-btn:active {
+            background-color: grey; /* Warna abu-abu saat hover atau aktif */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <div class="login100-pic js-tilt" data-tilt>
+                    <img src="images/img-01.png" alt="IMG">
+                </div>
+
+                <form class="login100-form validate-form">
+                    <span class="login100-form-title">
+                        Kartu Tanda Siswa
+                    </span>
+
+                    <div class="wrap-input100 validate-input" data-validate="Nomor siswa diperlukan">
+                        <input class="input100" type="text" id="studentId" placeholder="Silahkan input nomor siswa">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-id-card" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    
+                    <div class="container-login100-form-btn">
+                        <button type="button" class="login100-form-btn" onclick="checkStudent()">
+                            CEK NOMOR SISWA
+                        </button>
+                    </div>
+
+					<div class="text-center p-t-12">
+						<span class="txt1">
+							Pastikan
+						</span>
+						<a class="txt2" href="#">
+							Isi Dengan Benar!
+						</a>
+					</div>
+
+					<div class="text-center p-t-136">
+						<a class="txt2" href="#">
+							datasiswa.psht.rf.gd Copy Right Sje
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+    <!--===============================================================================================-->    
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script
